@@ -32,31 +32,32 @@ The data was combined and shuffled. After that, 100 business descriptions were s
 
 #### Checkpoint - 150
 
---- AGGREGATE EVALUATION RESULTS ---
-Relevance : 4.37 / 5.0
-Creativity : 4.30 / 5.0
-Brandability : 4.33 / 5.0
-Conciseness : 4.68 / 5.0
-Format_compliance : 4.98 / 5.0
+--- AGGREGATE EVALUATION RESULTS ---\
+Relevance : 4.37 / 5.0\
+Creativity : 4.30 / 5.0\
+Brandability : 4.33 / 5.0\
+Conciseness : 4.68 / 5.0\
+Format_compliance : 4.98 / 5.0\
 
 
 #### Checkpoint - 200
 
-Relevance : 4.41 / 5.0
-Creativity : 4.32 / 5.0
-Brandability : 4.32 / 5.0
-Conciseness : 4.66 / 5.0
-Format_compliance : 5.00 / 5.0
+--- AGGREGATE EVALUATION RESULTS ---\
+Relevance : 4.41 / 5.0\
+Creativity : 4.32 / 5.0\
+Brandability : 4.32 / 5.0\
+Conciseness : 4.66 / 5.0\
+Format_compliance : 5.00 / 5.0\
 
 
 #### Checkpoint - 250
 
---- AGGREGATE EVALUATION RESULTS ---
-Relevance : 4.39 / 5.0
-Creativity : 4.31 / 5.0
-Brandability : 4.32 / 5.0
-Conciseness : 4.50 / 5.0
-Format_compliance : 5.00 / 5.0
+--- AGGREGATE EVALUATION RESULTS ---\
+Relevance : 4.39 / 5.0\
+Creativity : 4.31 / 5.0\
+Brandability : 4.32 / 5.0\
+Conciseness : 4.50 / 5.0\
+Format_compliance : 5.00 / 5.0\
 
 
 We found that the model started showing good performance even after being trained for just 50 steps.
