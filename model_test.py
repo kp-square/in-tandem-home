@@ -18,7 +18,7 @@ NUM_EVAL_SAMPLES = 10 # Number of samples to evaluate
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Get API Key from environment variable for security
-api_key = 'AIzaSyBb6cgnWL3rF1hOr4RQBtrBpgRBXL0wxGQ'
+api_key = os.environ.get("GEMINI_API_KEY")
 if not api_key:
     raise ValueError("GEMINI_API_KEY environment variable not set.")
 genai.configure(api_key=api_key)

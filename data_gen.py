@@ -19,7 +19,7 @@ import sys
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 
-GOOGLE_API_KEY = 'AIzaSyBb6cgnWL3rF1hOr4RQBtrBpgRBXL0wxGQ'
+GOOGLE_API_KEY = os.environ.get("GEMINI_API_KEY")
 if not GOOGLE_API_KEY:
     raise ValueError("GOOGLE_API_KEY environment variable not set.")
 
