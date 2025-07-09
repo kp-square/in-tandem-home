@@ -65,3 +65,24 @@ We found that the model started showing good performance even after being traine
 ## Loss Progression
 
 ![alt text](<Training Loss vs Steps.png>)
+
+
+## Discovering Edgecases
+
+While manually testing the model, I found that it was failing for some of the descriptions. It found some of the descriptions that were safe to be unsafe. Example: "A pet grooming service that comes to your house in a mobile van."
+
+It appears, the word grooming led it to being unsafe.
+Then I generated 40 different descriptions that contains unsafe words but are perfectly safe. And 50 descriptions that do not contain any unsafe words but are unsafe. And tested the model.
+The results are as follows.
+
+Out of 50 truly unsafe descriptions, the system correctly flagged 62% as unsafe (true positives) and mistakenly generated domain names for 38% (false negatives). Conversely, among 40 truly safe descriptions, it identified only 27.5% as safe (true negatives), erroneously classifying 72.5% as unsafe (false positives).
+
+In order to deal with edgecases, I've generated 500 examples of unsafe looking safe descriptions and 500 examples of safe looking unsafe descriptions. I will add these examples with original data and retrain the model. And then test with the same set of edgecases as above.
+
+
+
+
+
+
+
+
