@@ -79,9 +79,12 @@ Out of 50 truly unsafe descriptions, the system correctly flagged 62% as unsafe 
 
 In order to deal with edgecases, I've generated 500 examples of unsafe looking safe descriptions and 500 examples of safe looking unsafe descriptions. I will add these examples with original data and retrain the model. And then test with the same set of edgecases as above.
 
+## Update - July 11
+I retrained the model with updated datasets. It's the version 2 of the model. Testing on the same sets of edgecases. The results are as follows.
 
+Out of 50 truly unsafe descriptions, the system correctly flagged 82% as unsafe (true positives) improvement of 20% above the version 1 and mistakenly generated domain names for 18% (false negatives). Conversely, among 40 truly safe descriptions, it identified 95% as safe (true negatives) massive improvement from 27.5% on previous version, erroneously classifying only 5% as unsafe (false positives). 
 
-
+- This shows that the model can be improved by adding more examples of edge cases in the training data.
 
 
 
