@@ -17,7 +17,7 @@ import sys
 
 
 
-GOOGLE_API_KEY = "AIzaSyBb6cgnWL3rF1hOr4RQBtrBpgRBXL0wxGQ" #os.environ.get("GEMINI_API_KEY")
+GOOGLE_API_KEY = os.environ.get("GEMINI_API_KEY")
 if not GOOGLE_API_KEY:
     raise ValueError("GOOGLE_API_KEY environment variable not set.")
 
