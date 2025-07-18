@@ -23,7 +23,7 @@ Following scripts can be used to generate the training data.
 
 
 `python data_gen.py --gen_type positive --samples 1000` \
-`python data_gen.py --gen_type negative --samples 1000` \
+`python data_gen.py --gen_type negative --samples 1000` 
 
 
 *Note:* A Gemini 2.5 API key can be obtained free of cost via Google AI Studio.
@@ -89,7 +89,7 @@ Following scripts can be used to generate the edgecases.
 - Negative (Unsafe) edgecases and domains will be added to `negative_domain_gen_dataset.jsonl`
 
 
-`python data_gen.py --gen_type positive --edgecase --samples 500`
+`python data_gen.py --gen_type positive --edgecase --samples 500`\
 `python data_gen.py --gen_type negative --edgecase --samples 500` 
 
 
