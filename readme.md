@@ -21,10 +21,9 @@ Following scripts can be used to generate the training data.
 - Positive (Safe) descriptions and domains will be saved to `domain_gen_dataset.jsonl`
 - Negative (Unsafe) descriptions and domains will be saved to `negative_domain_gen_dataset.jsonl`
 
-`
-python data_gen.py --gen_type positive --samples 1000 \
-python data_gen.py --gen_type negative --samples 1000 \
-`
+
+`python data_gen.py --gen_type positive --samples 1000` \
+`python data_gen.py --gen_type negative --samples 1000` \
 
 
 *Note:* A Gemini 2.5 API key can be obtained free of cost via Google AI Studio.
@@ -89,10 +88,9 @@ Following scripts can be used to generate the edgecases.
 - Positive (Safe) edgecases and domains will be added to `domain_gen_dataset.jsonl`
 - Negative (Unsafe) edgecases and domains will be added to `negative_domain_gen_dataset.jsonl`
 
-`
-python data_gen.py --gen_type positive --edgecase --samples 500 \
-python data_gen.py --gen_type negative --edgecase --samples 500 \
-`
+
+`python data_gen.py --gen_type positive --edgecase --samples 500`
+`python data_gen.py --gen_type negative --edgecase --samples 500` 
 
 
 I retrained the model with updated datasets. It's the version 2 of the model. Testing on the same sets of edgecases. The results are as follows.
